@@ -7,8 +7,17 @@ $grey-dark: #777;
 $grey-light-1: #f7f7f7;
 $white: #fff; 
 $black: #0000;
+
+$secondary-light: #ffb900;
+$secondary-dark: #ff7730;
+
+$tertiary-light: #2998ff;
+$tertiary-dark: #5643fa;
  
 // Grid 
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
 $gutter-horizontal: 6rem;
+
+// Shadows 
+$shadow1: 0 1.5rem 4rem rgba($black, .15);
