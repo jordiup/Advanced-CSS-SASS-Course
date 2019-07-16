@@ -1,0 +1,21 @@
+[debug] [2019-07-16T02:47:50.245Z] ----------------------------------------------------------------------
+[debug] [2019-07-16T02:47:50.249Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jordi\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2019-07-16T02:47:50.250Z] CLI Version:   7.0.0
+[debug] [2019-07-16T02:47:50.250Z] Platform:      win32
+[debug] [2019-07-16T02:47:50.250Z] Node Version:  v10.14.2
+[debug] [2019-07-16T02:47:50.259Z] Time:          Tue Jul 16 2019 10:47:50 GMT+0800 (Australian Western Standard Time)
+[debug] [2019-07-16T02:47:50.260Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-07-16T02:47:50.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-07-16T02:47:50.282Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Jordi\Desktop\CODE GANG\OTHER\advanced-css-sass-course
+
