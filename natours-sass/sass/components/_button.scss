@@ -1,6 +1,8 @@
 // Button
 .btn{
-  &:link, &:visited {
+  &,
+  &:link, 
+  &:visited {
     text-transform: uppercase;
     text-decoration: none; 
     // font-weight: ;
@@ -8,6 +10,10 @@
     display: inline-block;
     border-radius: 5rem;
     transition: all .2s;
+
+    // Change for the <button> element
+    border: none; 
+    cursor: pointer;
   }
 
   &:hover {
@@ -20,7 +26,9 @@
     }
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($black,.2);
   }
@@ -63,6 +71,7 @@
 }
 
 .btn-text {
+  &,
   &:link,
   &:visited {
     font-size: 1.6rem;
