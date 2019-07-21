@@ -14,6 +14,7 @@
     box-shadow: 0 1rem 3rem rgba($black, .4);
     text-align: center;
   }
+
   &-bkg{
     height: 6rem;
     width: 6rem;
@@ -86,7 +87,6 @@
   }
 
   span {
-    margin-right: 1.5rem;
     display: inline-block;
   }
 
@@ -112,24 +112,38 @@
       height: 2px;
       background-color: $grey-dark-3;
       display: inline-block;
-      position: absolute;
-
-      left: 0.3;
+      left: 0;
     }
 
     &::before,
     &::after{
       content: "";
       position: absolute;
+      left: 0;
       transition: all .2s;
     }
 
     &::before{
-      top: -0.8rem;
+      top: -1rem;
     }
     &::after{
-      top: 0.8rem;
+      top: 1rem;
     }
 
   }
+
+  &-checkbox:checked + &-button &-icon::before {
+    transform: rotate(45deg);
+    top: 0rem;
+  }
+
+  &-checkbox:checked + &-button &-icon {
+    background-color: transparent;
+  }
+
+  &-checkbox:checked + &-button &-icon::after {
+    transform: rotate(-45deg);
+    top: 0rem;
+  }
+
 }

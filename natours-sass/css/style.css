@@ -444,6 +444,34 @@ body {
 .form-radio-input:checked ~ .form-radio-label .form-radio-button::after {
   opacity: 1; }
 
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
+    border-radius: 3px;
+    display: table; }
+  .popup-left {
+    width: 33.333333%;
+    display: table-cell; }
+  .popup-right {
+    width: 66.666666%;
+    display: table-cell; }
+  .popup-img {
+    display: block;
+    width: 100%; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right, #28b4858c, #55c57acb), url(../img/hero.jpg);
@@ -534,7 +562,6 @@ body {
   transform: translateX(1rem); }
 
 .navigation span {
-  margin-right: 1.5rem;
   display: inline-block; }
 
 .navigation-checkbox:checked ~ .navigation-bkg {
@@ -552,16 +579,27 @@ body {
     height: 2px;
     background-color: #333;
     display: inline-block;
-    position: absolute;
-    left: 0.3; }
+    left: 0; }
   .navigation-icon::before, .navigation-icon::after {
     content: "";
     position: absolute;
+    left: 0;
     transition: all .2s; }
   .navigation-icon::before {
-    top: -0.8rem; }
+    top: -1rem; }
   .navigation-icon::after {
-    top: 0.8rem; }
+    top: 1rem; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::before {
+  transform: rotate(45deg);
+  top: 0rem; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon {
+  background-color: transparent; }
+
+.navigation-checkbox:checked + .navigation-button .navigation-icon::after {
+  transform: rotate(-45deg);
+  top: 0rem; }
 
 .footer {
   background-color: #333;
