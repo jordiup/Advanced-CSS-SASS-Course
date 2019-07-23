@@ -13,9 +13,29 @@
     z-index: 2000;
     box-shadow: 0 1rem 3rem rgba($black, .4);
     text-align: center;
+
+    @include respond(tab-port){
+      top: 2rem;
+      right: 3.5rem;  
+    }
+    @include respond(phone){
+      top: 1rem;
+      right: 2.5rem;  
+    }
+
   }
 
   &-bkg{
+
+    @include respond(tab-port){
+      top: 2.5rem;
+      right: 4rem;  
+    }
+    @include respond(phone){
+      top: 1.5rem;
+      right: 3rem;  
+    }
+
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
