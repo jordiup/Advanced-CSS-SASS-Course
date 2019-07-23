@@ -12,6 +12,12 @@
   z-index: 3000;
   background-color: rgba($black, .7);
 
+  // To test supported features... https://caniuse.com/
+  @supports( (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) ) {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+
   &-content {
     @include absCenter;
     width: 75%;

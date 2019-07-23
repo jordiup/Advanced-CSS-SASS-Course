@@ -24,17 +24,24 @@
     height: 15rem; 
     // background-color: lime;
     float: left;
-    shape-outside: circle(50% at 50% 50%);
-    -webkit-shape-outside: circle(50% at 50% 50%);
-    clip-path: circle(50% at 50% 50%);
-    -webkit-clip-path: circle(50% at 50% 50%);
     transform: translate(-3rem) skewX(12deg);
     position: relative;
     margin-top: -2rem;
+    overflow: hidden;
+    border-radius: 50%;
 
     @include respond(phone){
       transform: skewX(0) translateX(-3rem);
     }
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      clip-path: circle(50% at 50% 50%);
+      -webkit-clip-path: circle(50% at 50% 50%);  
+      shape-outside: circle(50% at 50% 50%);
+      -webkit-shape-outside: circle(50% at 50% 50%);  
+      border-radius: none;
+    }
+  
   }
 
   &-img {

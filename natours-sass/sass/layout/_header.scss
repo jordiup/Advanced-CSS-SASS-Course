@@ -5,25 +5,29 @@
     url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;  
-  clip-path: polygon(0 0, 
-    100% 0, 
-    100% 75vh, 
-    0 100%
-  );
-  -webkit-clip-path: polygon(0 0, 
-    100% 0, 
-    100% 75vh, 
-    0 100%
-  );
   position: relative;
 
-  @media (min-resolution: 192dpi) and (min-width: 600px) {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    clip-path: polygon(0 0, 
+      100% 0, 
+      100% 75vh, 
+      0 100%
+    );
+    -webkit-clip-path: polygon(0 0, 
+      100% 0, 
+      100% 75vh, 
+      0 100%
+    );
+  }
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 600px),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px) {
     background-image: 
     linear-gradient(to right, $darker-green, $light-green), 
     url(../img/hero.jpg);
   }
 
-  @media (min-width: 2000px) {
+  @media only screen and (min-width: 2000px) {
     background-image: 
     linear-gradient(to right, $darker-green, $light-green), 
     url(../img/hero.jpg);
