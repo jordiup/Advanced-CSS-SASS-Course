@@ -18,6 +18,9 @@
 The following project have been build in correspondence with the tutorials, and are deployed live with Firebase. Feel free to check them out.
 
 ### [Natours (Sass)](https://advanced-css-sass-natours.firebaseapp.com/)
-<!-- ![](preview-imgs/preview-1.gif)
-- Uses React and Redux -->
+![](preview-imgs/natours.png)
+<!-- - Responsive
+- Animations, shadows,  -->
 
+<!-- ### [Trillo]() -->
+<!-- ![](preview-imgs/natoursasdAJDKLFAJLKSJFKLAJSL.png) -->
