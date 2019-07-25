@@ -49,6 +49,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%; } }
   .search-input {
     font-family: inherit;
     font-size: inherit;
@@ -229,13 +233,22 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .overview-rating {
+        padding: 0 1.5rem; } }
   .overview-rating-average {
     font-size: 2.25rem;
     font-weight: 600; }
+    @media only screen and (max-width: 37.5em) {
+      .overview-rating-average {
+        font-size: 1.8rem; } }
   .overview-rating-count {
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .overview-rating-count {
+        font-size: .5rem; } }
 
 .btn-inline {
   border: none;
@@ -289,11 +302,16 @@ body {
     height: 2rem;
     width: 2rem;
     margin-right: .7rem;
-    background-color: var(--primary);
-    -webkit-mask-image: url(../img/chevron-thin-right.svg);
-    -webkit-mask-size: cover;
-    mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover; }
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover; }
+    @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+      .list-item::before {
+        background-color: var(--primary);
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+        background-image: none; } }
 
 .recommend {
   font-size: 1.3rem;
@@ -424,6 +442,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      height: 13rem;
+      align-content: space-around; } }
 
 .content {
   display: flex; }
