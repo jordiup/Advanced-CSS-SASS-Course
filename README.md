@@ -1,6 +1,6 @@
-# Advanced-CSS-SASS-Course
+# Advanced CSS SASS Course
  
- Showcase personal projects using advanced CSS and SASS, also document progress of the highly rated Udemy course taught by Jonas Schmedtmann.
+ This repo showcases personal projects using advanced CSS and SASS, as well as documenting the progress of a highly rated Udemy course taught by Jonas Schmedtmann - totalling to 28 hours of lecture content.
 
  Topics covered: 
 - Advanced CSS animations with @keyframes, animation and transition
@@ -15,12 +15,18 @@
 - The NPM ecosystem: development workflows and building processes
 
 ## Showcased projects
-The following project have been build in correspondence with the tutorials, and are deployed live with Firebase. Feel free to check them out.
+The following project have been build by myself in correspondence with the tutorials, and are deployed live with Firebase. Feel free to check them out.
 
-### [Natours (Sass)](https://advanced-css-sass-natours.firebaseapp.com/)
+ ### [Natours (Sass)](https://advanced-css-sass-natours.firebaseapp.com/)
 ![](preview-imgs/natours.png)
 <!-- - Responsive
 - Animations, shadows,  -->
 
-### [Trillo](https://scss-trillo-8fed7.firebaseapp.com/)
+ ### [Trillo](https://scss-trillo-8fed7.firebaseapp.com/)
 ![](preview-imgs/trillo.png)
+
+ ### [Nexter](https://scss-nexter.firebaseapp.com/)
+![](preview-imgs/nexter.png)
+
+
+
