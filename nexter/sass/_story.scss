@@ -9,6 +9,11 @@
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium){
+      grid-column: 1 / -1;
+    }
+
   }
 
   &-img {
@@ -18,13 +23,28 @@
       width: 100%;
       grid-row: 2 / 6;
       grid-column: 2 / 6;
+
+      @media only screen and (max-width: $bp-medium){
+        grid-row: 1 / -1;
+        grid-column: 1 / 5;
+        padding: 3rem;
+      }
     }
     &-2 {
       width: 115%;
       grid-row: 4 / 6;
       grid-column: 4 / 8;
       z-index: 20;
+
+      @media only screen and (max-width: $bp-medium){
+        grid-row: 1 / -1;
+        grid-column: 4 / 8;
+        // padding: 3rem;
+        width: 100%;
+      }
     }
+
+
   }
 
   &-content{
@@ -32,6 +52,12 @@
     grid-column: col-start 5 / full-end;
     
     padding: 6rem 8vw;
+
+    @media only screen and (max-width: $bp-medium){
+      grid-column: 1 / -1;
+      grid-row: 5 / span 1;
+    }
+
 
     // Flex way
     // display: flex;
